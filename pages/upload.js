@@ -1,5 +1,5 @@
 import Header from '../components/Header';
-import '../styles/globals.css';
+
 import { useState } from 'react';
 
 export default function Upload() {

@@ -1,5 +1,5 @@
 
-import useSWR from 'swr'; import Link from 'next/link'; import Header from '../components/Header'; import '../styles/globals.css'
+import useSWR from 'swr'; import Link from 'next/link'; import Header from '../components/Header'; 
 const fetcher = url=> fetch(url).then(r=>r.json())
 export default function Feed(){
   const {data: posts} = useSWR('/api/posts', fetcher)
